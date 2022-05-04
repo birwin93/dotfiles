@@ -1,8 +1,0 @@
-#!/bin/bash
-
-set -euo pipefail
-
-theme=$(get-appearance)
-perl -i -pe \
-  's/colors: \*solarized_\w+$/colors: *solarized_'"$theme"'/' \
-  ~/.config/alacritty/alacritty.yml

@@ -1,9 +1,0 @@
-#!/bin/sh
-
-pid="$(pgrep -f offlineimap | head -1)"
-
-if [ -n "$pid" ]; then
-  exit $(kill -9 "$pid")
-else
-  exit 1
-fi

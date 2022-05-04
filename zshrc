@@ -17,16 +17,16 @@ do
 done
 
 # Load autocomplete and other zsh stuff
-autoload -Uz compinit
-compinit -u
+# autoload -Uz compinit
+# compinit -u
 
-for file in ${(M)configs:#*/completions.zsh}
-do
-  source "$file"
-done
+# for file in ${(M)configs:#*/completions.zsh}
+# do
+#   source "$file"
+# done
 
-if [[ "$(wc -l ~/.keith_zsh_history | xargs | cut -d " " -f 1)" -lt 1000 ]]; then
-  echo "warning: ~/.keith_zsh_history looks borked"
-fi
+# if [[ "$(wc -l ~/.keith_zsh_history | xargs | cut -d " " -f 1)" -lt 1000 ]]; then
+#   echo "warning: ~/.keith_zsh_history looks borked"
+# fi
 
-set-alacritty-theme
+# set-alacritty-theme

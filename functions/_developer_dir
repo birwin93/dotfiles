@@ -1,5 +1,0 @@
-#compdef -value-,DEVELOPER_DIR,-default-
-
-local -a xcodes
-xcodes=($(find /Applications -maxdepth 1 -name "Xcode*.app"))
-_describe 'Xcode' xcodes

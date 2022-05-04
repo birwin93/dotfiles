@@ -1,8 +1,0 @@
-#!/bin/sh
-
-set -euo pipefail
-
-git_dir="$(git rev-parse --git-dir)"
-tagsfile=$(mktemp)
-git ls-files --recurse-submodules | "${CTAGS:-ctags}" --tag-relative -L - -f"$tagsfile"
-mv "$tagsfile" "$git_dir/tags"

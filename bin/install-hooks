@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-hooks_dir=$(git rev-parse --git-path hooks)
-
-mkdir -p "$hooks_dir"
-for hook in ~/.git_template/hooks/*
-do
-  cp "$hook" "$hooks_dir"
-done

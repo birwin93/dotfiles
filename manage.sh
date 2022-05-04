@@ -1,51 +1,8 @@
 #!/bin/bash
 
 files=(\
-  agignore \
   bash_profile \
   bashrc \
-  bazelrc \
-  bin \
-  colordiffrc \
-  conductor.js \
-  config \
-  css \
-  ctags \
-  curlrc \
-  gemrc \
-  ghci \
-  git_template \
-  gitattributes \
-  gitconfig \
-  gitignore \
-  gnupg \
-  haskeline \
-  hgrc \
-  hushlogin \
-  ideavimrc \
-  inputrc \
-  js \
-  lldbhelpers \
-  lldbinit \
-  mailcap \
-  mpdconf \
-  msmtprc \
-  mutt \
-  ncmpcpp \
-  npmrc \
-  offlineimaprc \
-  psqlrc \
-  pylintrc \
-  rspec \
-  tmux \
-  tmux.conf \
-  urlview \
-  vim \
-  vimrc \
-  w3m \
-  weechat \
-  xvimrc \
-  zshenv \
   zshrc \
 )
 
@@ -120,9 +77,6 @@ fi
 # Check whether the user is installing or removing
 if [[ $1 == "install" ]]; then
   install_links
-
-  # It's required for this to have these permissions
-  chmod 0600 ~/.msmtprc
 elif [[ $1 == "remove" ]]; then
   remove_links
 elif [[ $1 == "clean" ]]; then

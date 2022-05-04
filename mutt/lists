@@ -1,8 +1,0 @@
-subscribe buildkite1@discoursemail.com
-subscribe cfe-dev@lists.llvm.org
-subscribe llvm-dev@lists.llvm.org
-subscribe llvm@discoursemail.com
-subscribe mutt-users@mutt.org
-subscribe swift@discoursemail.com
-
-# vim: ft=muttrc
